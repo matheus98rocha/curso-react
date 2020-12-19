@@ -1,10 +1,11 @@
 import React from 'react';
 
-export default function fragmento(props){
+export default function fragmento(props) {
+    const msg = "Seja Bem Vindo(a)";
     return (
         <div>
-            <h2>Fragmento</h2>
-            <p>Cuidado com esse erro! Funcionou?</p>
+            <h2>{msg}</h2>
+            <h3>Feito durante as aulas de ReactJS da COD3R</h3>
         </div>
     )
 }

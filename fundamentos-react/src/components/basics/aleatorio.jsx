@@ -8,15 +8,16 @@ const Desafio = (props) => {
 
     return (
         <div>
+            <h2>Valor Aleatório</h2>
             <p>
                 Valor Mínimo: {min}
             </p>
             <p>
                 Valor Máximo: {max}
             </p>
-            
+
             <p>
-                Valor Aleatório: Não sei dizer {aleatorio}
+                Valor Aleatório: {aleatorio}
             </p>
 
         </div>

@@ -1,4 +1,12 @@
-body{
-    background-color: #222;
-    color: #ffffff;
+body {
+  background-color: #222;
+  color: #ffffff;
+  font-family: Oswald;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 200;
 }

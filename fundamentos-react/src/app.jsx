@@ -10,6 +10,8 @@ import Desafio from './components/basics/aleatorio';
 import NewComponent from './components/basics/aulaComponent';
 import FamilyMember from './components/basics/familiaMembro';
 import Family from './components/basics/familia';
+import List from './components/repeticao/listaAlunos';
+import Products from './components/repeticao/tabelaProduto';
 
 
 const Props = () => {
@@ -25,6 +27,15 @@ const Props = () => {
                     <Primeiro></Primeiro>
                 </Card>
 
+                <Card titulo="Produtos" className="cards" color="#FF432E">
+                    <Products />
+                </Card>
+
+
+                <Card titulo="Repetição" className="cards" color="#FF4C65">
+                    <List />
+                </Card>
+
                 <Card titulo="Número Aleatório" className="cards" color="#008">
                     <Desafio min={2} max={60} />
                 </Card>
@@ -38,9 +49,9 @@ const Props = () => {
 
                 <Card titulo="Familia de Componentes" className="cards" color="#00C8F8">
                     <Family sobrenome="Rocha">
-                        <FamilyMember nome="Matheus "/>
-                        <FamilyMember nome="Bruno "/>
-                        <FamilyMember nome="Lola "/>
+                        <FamilyMember nome="Matheus " />
+                        <FamilyMember nome="Bruno " />
+                        <FamilyMember nome="Lola " />
                     </Family>
                 </Card>
 

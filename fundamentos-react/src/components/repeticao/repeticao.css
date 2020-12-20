@@ -1,0 +1,24 @@
+li {
+  list-style: none;
+}
+
+.tableProducts table{
+  width: 100%;
+  border: 1px solid #008b8b;
+}
+
+.tableProducts th{
+  background-color:#008b8b;
+  color: #fff;
+
+}
+
+.tableProducts .Par{
+  background-color:#ddd;
+
+}
+
+.tableProducts .Impar{
+  background-color:#ccc;
+
+}

@@ -3,3 +3,9 @@
     justify-content:center;
     flex-wrap: wrap;
 }
+
+.family{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}

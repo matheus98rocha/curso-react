@@ -12,6 +12,8 @@ import FamilyMember from './components/basics/familiaMembro';
 import Family from './components/basics/familia';
 import List from './components/repeticao/listaAlunos';
 import Products from './components/repeticao/tabelaProduto';
+import ParOuImpar from './components/conditional/parOuImpar';
+import User from './components/conditional/userInfo';
 
 
 const Props = () => {
@@ -31,6 +33,11 @@ const Props = () => {
                     <Products />
                 </Card>
 
+                <Card titulo="Renderização Condicional" className="cards" color="#982395">
+                    <ParOuImpar num={21} />
+                    <User user={{name: "Matheus"}} />
+                    <User user={{}} />
+                </Card>
 
                 <Card titulo="Repetição" className="cards" color="#FF4C65">
                     <List />

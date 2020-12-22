@@ -14,9 +14,10 @@ import List from './components/repeticao/listaAlunos';
 import Products from './components/repeticao/tabelaProduto';
 import ParOuImpar from './components/conditional/parOuImpar';
 import User from './components/conditional/userInfo';
+import doItYour from './components/basics/doitYourself';
 
 
-const Props = () => {
+const mainApp = () => {
     return (
         <div className="app">
 
@@ -29,13 +30,14 @@ const Props = () => {
                     <Primeiro></Primeiro>
                 </Card>
 
-                <Card titulo="Produtos" className="cards" color="#FF432E">
+                <Card titulo="Produtos" className="cards" color="#080">
                     <Products />
                 </Card>
 
+
                 <Card titulo="Renderização Condicional" className="cards" color="#982395">
                     <ParOuImpar num={21} />
-                    <User user={{name: "Matheus"}} />
+                    <User user={{ name: "Matheus" }} />
                     <User user={{}} />
                 </Card>
 
@@ -54,6 +56,13 @@ const Props = () => {
                         nota=" 22 " />
                 </Card>
 
+                <Card titulo="Do it by myself" className="cards" color="#854545">
+                    <doItYour
+                        name=" Matheus Gonçalves Rocha "
+                        age=" 22 "
+                        sex=" Masculino " />
+                </Card>
+
                 <Card titulo="Familia de Componentes" className="cards" color="#00C8F8">
                     <Family sobrenome="Rocha">
                         <FamilyMember nome="Matheus " />
@@ -64,8 +73,8 @@ const Props = () => {
 
             </div>
 
-        </div>
+        </div >
     );
 }
 
-export default Props;
+export default mainApp;

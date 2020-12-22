@@ -14,7 +14,7 @@ import List from './components/repeticao/listaAlunos';
 import Products from './components/repeticao/tabelaProduto';
 import ParOuImpar from './components/conditional/parOuImpar';
 import User from './components/conditional/userInfo';
-import doItYour from './components/basics/doitYourself';
+import Children from './components/basics/children';
 
 
 const mainApp = () => {
@@ -57,10 +57,7 @@ const mainApp = () => {
                 </Card>
 
                 <Card titulo="Do it by myself" className="cards" color="#854545">
-                    <doItYour
-                        name=" Matheus Gonçalves Rocha "
-                        age=" 22 "
-                        sex=" Masculino " />
+                    <Children />
                 </Card>
 
                 <Card titulo="Familia de Componentes" className="cards" color="#00C8F8">

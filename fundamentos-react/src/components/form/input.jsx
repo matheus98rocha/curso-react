@@ -4,27 +4,29 @@ import './input.css';
 
 const Form = props => {
 
-    const [value, setValue] = useState('');
+    const [name, setName] = useState('');
+    const [lastName, setLast] = useState('');
 
-    function whenChange(e) {
-        setValue(e.target.value);
+    function setFirstName(e) {
+        setName(e.target.value);
+    }
+
+    function setLastName(e) {
+        setLast(e.target.value)
     }
 
     return (
         // Componente controlado
         <div className="input">
             <div>
-                <input value={value} onChange={whenChange} placeholder="Digite algo" />
-                <p>{value}</p>
-            </div>
-
-            <div>
-                <input value={value} onChange={whenChange} placeholder="Digite algo" />
-                <p>{value}</p>
+                <input value={name} onChange={setFirstName} placeholder="Nome" />
+                <input value={lastName} onChange={setLastName} placeholder="Sobrenome" />
+                <div className="result">
+                    <p className="space">{name} </p>
+                    <p>{lastName}</p>
+                </div>
             </div>
         </div>
-
-
     )
 }
 

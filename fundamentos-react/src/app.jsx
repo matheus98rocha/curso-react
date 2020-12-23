@@ -31,7 +31,7 @@ const mainApp = () => {
                     <Primeiro></Primeiro>
                 </Card>
 
-                <Card titulo="Input" className="cards" color="#4b005e">
+                <Card titulo="Olá" className="cards" color="#4b005e">
                     <Form />
                 </Card>
 

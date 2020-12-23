@@ -5,4 +5,14 @@
 
 .input input{
     font-size: 1.4rem;
+    margin: 5px;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+}
+
+.space{
+    margin-right: 4px;
 }

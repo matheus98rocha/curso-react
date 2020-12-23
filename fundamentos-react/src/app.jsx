@@ -15,7 +15,8 @@ import Products from './components/repeticao/tabelaProduto';
 import ParOuImpar from './components/conditional/parOuImpar';
 import User from './components/conditional/userInfo';
 import Children from './components/basics/children';
-
+import CatchInfo from './components/comunication/catchInfo';
+import Form from './components/form/input';
 
 const mainApp = () => {
     return (
@@ -30,10 +31,17 @@ const mainApp = () => {
                     <Primeiro></Primeiro>
                 </Card>
 
+                <Card titulo="Input" className="cards" color="#4b005e">
+                    <Form />
+                </Card>
+
+                <Card titulo="Estados" className="cards" color="#4f009e">
+                    <CatchInfo />
+                </Card>
+
                 <Card titulo="Produtos" className="cards" color="#080">
                     <Products />
                 </Card>
-
 
                 <Card titulo="Renderização Condicional" className="cards" color="#982395">
                     <ParOuImpar num={21} />

@@ -7,6 +7,8 @@ const Form = props => {
     const [name, setName] = useState('');
     const [lastName, setLast] = useState('');
 
+    const userNavItem = name !== '';
+
     function setFirstName(e) {
         setName(e.target.value);
     }
@@ -22,6 +24,7 @@ const Form = props => {
                 <input value={name} onChange={setFirstName} placeholder="Nome" />
                 <input value={lastName} onChange={setLastName} placeholder="Sobrenome" />
                 <div className="result">
+                    {userNavItem ? <p>Olá</p>:<p></p>}
                     <p className="space">{name} </p>
                     <p>{lastName}</p>
                 </div>

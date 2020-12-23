@@ -6,7 +6,7 @@ const SendInfo = props => {
 
     return (
         <div>
-            <button onClick={e => execute('Matheus', 25, true)}>
+            <button onClick={e => execute('Matheus', 22, true)}>
                Clique aqui!
             </button>
         </div >

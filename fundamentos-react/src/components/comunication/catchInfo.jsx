@@ -19,7 +19,7 @@ const CatchInfo = props => {
             <div>
                 <h1>{nome}</h1>
                 <h2>{idade}</h2>
-                <p>É um nerd ?</p><p>{nerd ? 'Verdadeiro' : 'Falso'}</p>
+                <p>É um Programador ?</p><p>{nerd ? 'Verdadeiro' : 'Falso'}</p>
             </div>
 
             <SendInfo clickButton={getInformation} />

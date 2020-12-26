@@ -17,6 +17,7 @@ import User from './components/conditional/userInfo';
 import Children from './components/basics/children';
 import CatchInfo from './components/comunication/catchInfo';
 import Form from './components/form/input';
+import Contador from './components/contador/contador';
 
 const mainApp = () => {
     return (
@@ -41,6 +42,12 @@ const mainApp = () => {
 
                 <Card titulo="Produtos" className="cards" color="#080">
                     <Products />
+                </Card>
+
+
+                <Card titulo="Contador" className="cards" color="#080">
+                    <Contador  numeroInicial={10}> </Contador>
+
                 </Card>
 
                 <Card titulo="Renderização Condicional" className="cards" color="#982395">

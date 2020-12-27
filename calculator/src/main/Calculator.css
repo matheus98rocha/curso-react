@@ -1,7 +1,12 @@
-.calculator{
-    height: 320px;
-    width: 235px;
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: red;
+.calculator {
+  height: 320px;
+  width: 310px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  display: grid;
+
+  /* As coluanas vão se repetir 4 vezes e terão 100px*/
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 1fr 48px 48px 48px 48px 48px;
 }

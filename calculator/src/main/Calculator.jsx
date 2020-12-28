@@ -53,6 +53,12 @@ export default class Calculator extends Component {
             return
         }
 
+
+        if (this.state.displayValue.length >= 10) {
+            alert("Valor máximo atingido");
+            return
+        }
+
         const clearDisplay = this.state.displayValue === '0' || this.state.clearDisplay;
         const currentValue = clearDisplay ? '' : this.state.displayValue;
         const displayValue = currentValue + n;
@@ -64,8 +70,8 @@ export default class Calculator extends Component {
             const values = [...this.state.values];
             values[i] = newValue;
             this.setState({ values })
-            console.log(values);
         }
+
     }
 
     render() {

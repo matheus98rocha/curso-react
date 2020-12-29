@@ -5,7 +5,7 @@ const About = props => {
     return (
         <main className="About">
             <h1>Componente About</h1>
-            <p>Sobre a gente</p>
+            <p>Sistema criado para estudo de ReactJS</p>
         </main>
     )
 }

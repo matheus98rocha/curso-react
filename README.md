@@ -5,6 +5,7 @@ Todo o código postado aqui tem como intuito ajudar quem estiver fazendo o curso
 ## Installing / Getting started
 
 ```shell
+npm i react-router-dom@5.2.0
 npm start
 ```
 ### Initial Configuration

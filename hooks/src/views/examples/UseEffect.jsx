@@ -11,31 +11,22 @@ const UseEffect = (props) => {
         return calcFatorial(n - 1) * n
     }
 
-    function calcParOuImpar(value) {
-        const val = value;
-        if (val % 2 === 0) {
-            return "Par"
-        } else {
-            return "Impar"
-        };
-
-    }
-
     const [number, setNumber] = useState(1);
     const [fatorial, setFatorial] = useState(1);
     const [status, setStatus] = useState("Impar");
+    const [title, setTitle] = useState("React App");
 
     useEffect(() => {
         setFatorial(calcFatorial(number));
     }, [number]);
 
     useEffect(() => {
-        if (fatorial > 1000) {
-            document.title = "Dalee"
+        if (title !== "React App") {
+            document.title = title
         } else {
             document.title = "React App"
         }
-    }, [fatorial])
+    }, [title])
 
     useEffect(() => {
         if (number % 2 === 0) {
@@ -76,6 +67,20 @@ const UseEffect = (props) => {
                 <div>
                     <span className="text">Status:</span>
                     <span className="text">{status}</span>
+                </div>
+            </div>
+
+            <SectionTitle title="Exercício #03" />
+            <div className="center">
+                <span className="text">Mudar titulo da página</span>
+
+                <div>
+
+                    <input type="text"
+                        className="input"
+                        value={title}
+                        onChange={e => setTitle(e.target.value)}
+                    />
                 </div>
             </div>
 

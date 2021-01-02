@@ -5,7 +5,7 @@ body {
 
 .text {
     font-weight: 300;
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 .red {
@@ -15,7 +15,7 @@ body {
 
 .input {
     font-weight: 300;
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 20px 0px;
 }
 
@@ -27,7 +27,7 @@ body {
     outline: none;
     background-color: #0092c3;
 
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fff;
 }
 

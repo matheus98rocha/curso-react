@@ -9,7 +9,11 @@
 
 ```shell
 git clone https://github.com/matheus98rocha/curso-react.git
-npm i react-router-dom@5.2.0
+
+npm install react-router-dom
+# ou
+yarn add react-router-dom
+
 npm start
 ```
 ## :rocket: Tecnologias
@@ -18,5 +22,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
+
 
 

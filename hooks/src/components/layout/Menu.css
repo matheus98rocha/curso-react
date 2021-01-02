@@ -8,6 +8,10 @@
     -webkit-box-shadow: 4px 0px 17px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 0px 17px -5px rgba(0,0,0,0.75);
     box-shadow: 4px 0px 17px -5px rgba(0,0,0,0.75);
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
 .Menu nav {

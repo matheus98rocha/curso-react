@@ -1,8 +1,9 @@
 .PageTitle {
     border-left: 10px solid #006c90;
-    padding: 15px;
+    padding: 20px;
     background: #006c9025;
     margin-bottom: 40px;
+    border-radius: 20px;
 }
 
 .PageTitle h1 {

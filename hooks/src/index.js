@@ -4,7 +4,11 @@ import React from 'react'
 
 import App from './views/App'
 
+import DataContext, { data } from './data/DataContext';
+
 ReactDOM.render(
-    <App />,
+    <DataContext.Provider value={data}>
+        <App />
+    </DataContext.Provider>,
     document.getElementById('root')
 )

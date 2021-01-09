@@ -1,48 +1,11 @@
 import React, { useReducer } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
-import { useState } from 'react';
 
-const initialState = {
-    cart: [],
-    products: [],
-    user: null,
-    number: 0
-}
-
-function reducer(state, action) {
-    switch (action.type) {
-        case 'add2ToNumber':
-            return { ...state, number: state.number + 2 }
-
-        case 'remove2toNumber':
-            return { ...state, number: state.number - 2 }
-
-        case 'mult7toNumber':
-            return { ...state, number: state.number * 7 }
-
-        case 'div25toNumber':
-            return { ...state, number: state.number / 7 }
-
-        case 'parseIntNumber':
-            return { ...state, number: parseInt(state.number) }
-
-        case 'newNumber':
-            return { ...state, number: state.number + action.payload }
-
-        case 'reset':
-            return { ...state, number: state.number = 0 }
+import { initialState, reducer } from '../../store/index';
+import { add2ToNumber, remove2toNumber, mult7toNumber, div25toNumber, parseIntNumber, newNumber, reset } from '../../store/actions/number'
+import { login } from '../../store/actions/user'
 
 
-        case 'login':
-            return { ...state, user: { name: action.payload } }
-
-        case 'logout':
-            return { ...state, user: { payload: action.name } }
-
-        default:
-            return state;
-    }
-}
 
 const UseReducer = (props) => {
 
@@ -61,7 +24,7 @@ const UseReducer = (props) => {
 
                 <div>
                     <button className="btn"
-                        onClick={() => dispatch({ type: 'login', payload: 'Maria' })}>Conectar</button>
+                        onClick={() => login(dispatch, "Matheus")}>Conectar</button>
 
                     <button className="btn"
                         onClick={() => dispatch({ type: 'logout', payload: null })}>Desconectar</button>
@@ -73,24 +36,25 @@ const UseReducer = (props) => {
                         </div>
 
                         <button className="btn"
-                            onClick={() => dispatch({ type: 'add2ToNumber' })}>+2</button>
+                            onClick={() => add2ToNumber(dispatch)}> +2</button>
 
                         <button className="btn"
-                            onClick={() => dispatch({ type: 'remove2toNumber' })}>-2</button>
+                            onClick={() => remove2toNumber(dispatch)}>-2</button>
 
                         <button className="btn"
-                            onClick={() => dispatch({ type: 'mult7toNumber' })}>*7</button>
+                            onClick={() => mult7toNumber(dispatch)}>*7</button>
 
                         <button className="btn"
-                            onClick={() => dispatch({ type: 'div25toNumber' })}>/25</button>
+                            onClick={() => div25toNumber(dispatch)}>/25</button>
 
                         <button className="btn"
-                            onClick={() => dispatch({ type: 'parseIntNumber' })}>Inteiro</button>
+                            onClick={() => parseIntNumber(dispatch)}>Inteiro</button>
+
                         <button className="btn"
                             onClick={() => dispatch({ type: 'newNumber', payload: 7 })}>Adicionar N</button>
 
                         <button className="btn"
-                            onClick={() => dispatch({ type: 'reset' })}>Resetar</button>
+                            onClick={() => reset(dispatch)}>Resetar</button>
                     </div>
 
                 </div>

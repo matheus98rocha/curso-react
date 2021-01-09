@@ -2,7 +2,7 @@ import React, { useReducer } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
 
 import { initialState, reducer } from '../../store/index';
-import { add2ToNumber, remove2toNumber, mult7toNumber, div25toNumber, parseIntNumber, newNumber, reset } from '../../store/actions/number'
+import { add2ToNumber, remove2toNumber, mult7toNumber, div25toNumber, parseIntNumber, reset } from '../../store/actions/number'
 import { login } from '../../store/actions/user'
 
 

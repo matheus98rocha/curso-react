@@ -4,7 +4,30 @@ import Button from '../Components/Button';
 
 import Display from '../Components/Display'
 
+// Notification
+import ReactNotification from 'react-notifications-component';
+import { store } from "react-notifications-component";
+import "animate.css"
+import 'react-notifications-component/dist/theme.css'
+
 import './Calculator.css';
+
+const handleOnDefault = () => {
+    store.addNotification({
+        title: "Ops...",
+        message: "Você não pode inserir mais de 10 valores",
+        type: "danger",
+        container: "top-center",
+        insert: "top",
+        animationIn: ["animate__animated", "animate__fadeIn"],
+        animationOut: ["animate__animated", "animate__fadeOut"],
+        dismiss: {
+            duration: 5000,
+            onScreen: true,
+            pauseOnHover: true
+        }
+    })
+}
 
 const initialState = {
     displayValue: '0',
@@ -54,7 +77,7 @@ export default class Calculator extends Component {
 
 
         if (this.state.displayValue.length >= 10) {
-            alert("Não é permitido mais de 15 caracteres")
+            handleOnDefault();
             return
         }
 
@@ -77,7 +100,9 @@ export default class Calculator extends Component {
         const setOperation = op => this.setOperation(op);
         return (
             <div>
+                
                 <div className="calculator">
+                    <ReactNotification />
                     <Display value={this.state.displayValue} />
                     <Button label="AC" click={() => this.clearMemory()} triple ></Button>
                     <Button label="/" click={setOperation} operation>/</Button>
@@ -98,9 +123,6 @@ export default class Calculator extends Component {
                     <Button label="=" click={setOperation} operation>=</Button>
 
                 </div>
-
-
-
             </div>
 
         )

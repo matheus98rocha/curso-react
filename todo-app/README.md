@@ -8,20 +8,15 @@
 ## Installing / Getting started
 
 ```shell
-git clone https://github.com/matheus98rocha/curso-react.git
+npm init
+npm i --save -E body-parser@1.15.2 express@4.14.0 mongoose@4.7.0 node-restful@0.2.5 pm2@2.1.5
 
-npm install react-router-dom
-# ou
-yarn add react-router-dom
-
-npm install react-notifications-component
-npm install --save react-notifications-component animate.css
-
+npm i --save-dev -E nodemon@1.11.0
 ```
 
 ## :rocket: Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Node.js](https://nodejs.org/en/)
+
 - [React](https://reactjs.org)

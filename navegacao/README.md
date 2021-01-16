@@ -1,4 +1,4 @@
-
+<h1>Modulo do Curso de React</h1>
 ## Installing / Getting started
 
 ```shell

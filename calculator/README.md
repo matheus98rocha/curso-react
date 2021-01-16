@@ -1,3 +1,4 @@
+<h1>Modulo do Curso de React</h1>
 ## Installing / Getting started
 
 ```shell
@@ -7,3 +8,4 @@ npm install react-notifications-component
 npm install --save react-notifications-component animate.css
 
 ```
+
